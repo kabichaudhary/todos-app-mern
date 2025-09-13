@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 import connectDB from "./db/index.js";
-import { app } from "./config/app.js";
+import { app } from "./config/express-config.js";
 dotenv.config({
   path: "./env",
 });

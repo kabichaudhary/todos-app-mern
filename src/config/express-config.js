@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import { router } from "../router/router.js";
 
 const app = express();
 
@@ -10,8 +11,10 @@ app.use(
   })
 );
 
-app.get("/", (req, res) => {
-  res.send("hello from server");
-});
+// body parser...
+app.use();
+
+// Router mount...
+app.use("/api/v1/", router);
 
 export { app };
