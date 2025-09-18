@@ -12,7 +12,8 @@ app.use(
 );
 
 // body parser...
-app.use();
+app.use(express.json());
+app.use(express.urlencoded());
 
 // Router mount...
 app.use("/api/v1/", router);
